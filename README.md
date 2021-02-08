@@ -1,18 +1,24 @@
+# README
 
-<p align="center">
-<img src="logo.png" alt="Logo OM30" width="200" />
-</p>
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-# Vagas Abertas - Time de Desenvolvimento OM30 - Home Office
+Things you may want to cover:
 
+* Ruby version
 
-## Estamos com as seguintes vagas abertas:
+* System dependencies
 
- - Pessoa Desenvolvedora FullStack PHP (<a href="DesafioFullStackPHP.md">Link do desafio</a>)
- 
- - Pessoa Desenvolvedora FullStack REACT (<a href="DesafioFullStackReact.md">Link do desafio</a>)
- 
- - Pessoa Desenvolvedora Ruby Backend (<a href="DesafioBackendRuby.md">Link do desafio</a>)
- - Pessoa Desenvolvedora Ruby Frontend (<a href="DesafioFrontendRuby.md">Link do desafio</a>)
- 
- Caso tenha dúvidas, entre em contato pelo email : desenvolvimento@om30.com.br.
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
