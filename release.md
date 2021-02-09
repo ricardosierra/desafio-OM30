@@ -1,0 +1,4 @@
+- [] Crud Manicipule
+- [] Entidade Manicipule
+- [] testes unitários
+- [x] Bootstrap do Rails

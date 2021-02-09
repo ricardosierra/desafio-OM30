@@ -214,7 +214,7 @@ DEPENDENCIES
   rails (~> 6.1.1)
   sass-rails (>= 6)
   selenium-webdriver
-  spring
+  spring (~> 2.0)
   sqlite3 (~> 1.4)
   turbolinks (~> 5)
   tzinfo-data
