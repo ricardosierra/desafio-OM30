@@ -1,5 +1,5 @@
-# 1: Ruby 2.3.1
-FROM ruby:2.3.1-alpine
+# 1: Ruby 2.7.0
+FROM ruby:2.7.0-alpine
 
 # 2: We'll set the application path as the working directory
 WORKDIR /usr/src/app
@@ -51,9 +51,9 @@ RUN set -ex \
   && mkdir -p /usr/src/app/tmp/cache \
   && mkdir -p /usr/src/app/tmp/pids \
   && mkdir -p /usr/src/app/tmp/sockets \
-  && DATABASE_URL=mysql2://bilo:GhyY3jGM33Xg1020@bilo.ciwggvxnyly2.sa-east-1.rds.amazonaws.com/bilo-backend_production?encoding=utf8 \
+  #&& DATABASE_URL=?encoding=utf8 \
   # AMQP_URL=amqp://guest:guest@amqp:5672 TWITTER_API_KEY=SOME_KEY TWITTER_API_SECRET=SOME_SECRET \
-  SECRET_KEY_BASE=83511c93163aea3f1274ebe2f90a2ee54529b520909685ff4efe5dc879f82fce25295d8c1a9212db683c79fa140b4509b0252ac28a \
+  SECRET_KEY_BASE= \
   && rake assets:precompile RAILS_ENV=production \
   #&& chown -R nobody /usr/src/app
 

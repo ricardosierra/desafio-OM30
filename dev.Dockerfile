@@ -1,5 +1,5 @@
-# 1: Ruby 2.3.1
-FROM ruby:2.3.1
+# 1: Ruby 2.7.0
+FROM ruby:2.7.0
 
 # 2: We'll set the application path as the working directory
 WORKDIR /usr/src/app
@@ -39,8 +39,10 @@ RUN set -ex \
 
 RUN printf "deb http://archive.debian.org/debian/ jessie main\ndeb-src http://archive.debian.org/debian/ jessie main\ndeb http://security.debian.org jessie/updates main\ndeb-src http://security.debian.org jessie/updates main" > /etc/apt/sources.list
 
+RUN apt-get update -y && apt-get install libcurl3 libffi-dev -y
+
 # 8: Install the current project gems - they can be safely changed later during
-RUN set -ex && apt-get update && apt-get install curl cmake python-pip -y && pip install woopra && rm -rf /var/lib/apt/lists/*
+RUN set -ex && apt-get update && apt-get install curl cmake -y && rm -rf /var/lib/apt/lists/*
 
 # 7: Install the current project gems - they can be safely changed later during
 # development via `bundle install` or `bundle update`:
